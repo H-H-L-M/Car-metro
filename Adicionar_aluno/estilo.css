@@ -1,0 +1,226 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #443e4d;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    z-index: 999;
+}
+
+.menu button {
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background-color: #0056b3;
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="text"],
+button,
+#fotoInput {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(8, 7, 7);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: rgb(158, 67, 183);
+}
+
+.alunos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aluno {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.aluno:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.aluno img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.opcoes {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.opcoes li {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.opcoes li:hover {
+    background-color: #ffffff;
+}
+#salvarPDF:hover {
+    background-color: rgb(158, 67, 183);
+}
+#salvarPDF {
+    display: block;
+    background-color: #5f3a59;
+    width: 100px;
+    right: 50px;
+}
+
+#contadorAlunosSalvos {
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+
+.copyright {
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+}
+
+#rodape {
+    display: inline-block;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    height: 4vh;
+    width: 100vw;
+    background-color: #333;
+    margin-bottom: -4px;
+}
+
+.centro{
+    text-align: center;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    height: 3vh;
+    width: 100vw;
+    margin-bottom: -4px;
+}
+
+.esquerda{
+    text-align: left;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    height: 3vh;
+    width: 100vw;
+    margin-bottom: -4px;
+}
+
+.direita{
+    text-align: right;
+    margin-top: 10px;
+    right: 5px;
+    position: fixed;
+    bottom: 0;
+    height: 3vh;
+    width: 100vw;
+    margin-bottom: -4px;
+}
+.aluno .id-aluno {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    color: #000000;
+}
+
+
+.input-file {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+
+
+.file-label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.file-label img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 5px auto 0;
+}
+
+.file-label span {
+    display: block;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+
+.image-preview01 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image-preview01 img {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,123 @@
+/* Estilos base */
+body {
+  font-family: 'Times New Roman', Times, serif; /* Define a fonte padrão para o corpo do documento */
+  background-color: rgb(57, 34, 82); /* Define a cor de fundo para o corpo do documento */
+  margin: 0; /* Remove as margens padrão do corpo do documento */
+  padding: 0; /* Remove o preenchimento padrão do corpo do documento */
+}
+
+/* Estilo para a barra de menu */
+.navbar {
+  background-color: #333; /* Cor de fundo da barra de menu */
+  color: #fff; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  display: flex; /* Usa o flexbox para alinhar os itens */
+  justify-content: space-between; /* Alinha os itens à esquerda e à direita */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo para a logo */
+.logo img {
+  height: 40px; /* Altura da logo */
+  width: auto; /* Largura automática para manter a proporção */
+}
+
+
+/* Estilo para o contêiner principal */
+.login-container {
+  display: flex; /* Usa o flexbox para alinhar os itens */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Define a altura para ocupar a altura total da tela */
+}
+
+/* Estilo para o formulário de login */
+#login-form {
+  background-color: rgb(230, 232, 239); /* Define a cor de fundo do formulário */
+  padding: 40px; /* Adiciona preenchimento interno */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  width: 100%; /* Garante que o formulário ocupe toda a largura disponível */
+  max-width: 400px; /* Limita a largura máxima do formulário */
+}
+
+/* Estilo para grupos de formulário (por exemplo, campos de usuário, senha) */
+.form-group {
+  margin-bottom: 5px; /* Adiciona margem inferior para separar os grupos */
+}
+
+/* Estilo para rótulos */
+label {
+  display: block; /* Faz com que os rótulos sejam exibidos em blocos */
+  margin-bottom: 5px; /* Adiciona um pequeno espaço abaixo dos rótulos */
+  font-weight: bold; /* Define a fonte em negrito para os rótulos */
+}
+
+/* Estilo para campos de entrada de texto */
+.input-field {
+  width: 100%; /* Garante que os campos de entrada ocupem toda a largura disponível */
+  padding: 12px; /* Adiciona preenchimento interno */
+  border: 2px solid #ccc; /* Adiciona uma borda sólida com cor cinza */
+  border-radius: 5px; /* Adiciona cantos arredondados */
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+/* Estilo para botões */
+.btn {
+  width: 75px; /* Garante que os botões ocupem toda a largura disponível */
+  padding: 12px; /* Adiciona preenchimento interno */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Adiciona cantos arredondados */
+  cursor: pointer; /* Altera o cursor para um ponteiro */
+  background-color: rgba(84, 52, 114, 0.745); /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+}
+
+/* Estilo para botões ao passar o mouse */
+.btn:hover {
+  background-color: rgb(84, 52, 114); /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o rodapé */
+#rodape {
+  position: fixed; /* Fixa o rodapé na parte inferior da janela de visualização */
+  bottom: 0; /* Alinha o rodapé à parte inferior */
+  left: 0; /* Alinha o rodapé à esquerda */
+  width: 100%; /* Garante que o rodapé ocupe toda a largura disponível */
+  background-color: #333; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  padding: 10px 0; /* Adiciona preenchimento interno */
+}
+
+/* Estilo para a imagem de fundo */
+.image-container {
+  position: fixed; /* Fixa a imagem na posição */
+  top: 0; /* Alinha a imagem no topo */
+  left: 0; /* Alinha a imagem à esquerda */
+  width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+  height: 100%; /* Garante que a imagem ocupe toda a altura disponível */
+  z-index: -1; /* Define uma camada abaixo dos outros elementos */
+}
+
+.background-image {
+  width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+  height: 100%; /* Garante que a imagem ocupe toda a altura disponível */
+  object-fit: cover; /* Faz com que a imagem cubra todo o contêiner */
+  filter: blur(8px); /* Aplica um desfoque na imagem */
+  opacity: 0.3; /* Define a opacidade da imagem */
+}
+
+/* Estilo para a imagem ao lado do formulário */
+.side-image {
+  display: block; /* Define como um elemento de bloco */
+  width: 213px; /* Define a largura da imagem */
+
+}
+
+
+/* Media query para ocultar a imagem em telas menores */
+@media (max-width: 768px) {
+  .side-image {
+      display: none; /* Oculta a imagem em telas menores */
+  }
+}
